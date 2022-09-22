@@ -1,0 +1,33 @@
+@import "assets/scss/variables";
+
+.eventDetailPage{
+    padding-top: 80px;
+    .eventDetailPageRoot{
+        display: flex;
+        column-gap: 10px;
+        margin-bottom: 10px;
+        .eventKey{
+            width: 50%;
+            flex: 1;
+            font-family: 'Helvetica';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: left;
+            /* identical to box height */
+            color: $ngtbc1;
+        }
+        .eventValue{
+            width: 50%;
+            flex: 1;
+            text-align: left;
+            font-family: 'Helvetica';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: $pc1;
+        }
+    }
+}

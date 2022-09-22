@@ -1,0 +1,70 @@
+// screen layout
+$tablet: 1100px;
+$mobile: 500px;
+
+// primary palette
+$pc1:#240D57;
+$pc2:#501FC1;
+$pc3:#8456EC;
+$pc4:#E87BF8;
+
+// Secondary Palette
+$sc1: #CCB6FF;
+$sc2: #EDE5FF;
+$sc3: #F6F2FF;
+
+// Alert colors
+$ac1: #FFD7E0;
+$ac2: #E61445;
+$ac3: #D3FFE2;
+$ac4: #00805E;
+
+/* 
+Neutrals
+for general text and backgrounds
+*/
+$ngtbc1: #4F4F4F;
+$ngtbc2: #828282;
+$ngtbc3: #BDBDBD;
+$ngtbc4: #E0E0E0;
+$ngtbc5: #F2F2F2;
+$ngtbc6: #BDBDBD;
+
+$linear-gradient-bg1: linear-gradient(90deg, $pc3 24.2%, $pc4 120.46%);
+
+.primary-gradient-bg{
+    background: $linear-gradient-bg1;
+}
+.btn{
+    width: fit-content;
+    padding: 16px 70px;
+    border-radius: 10px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    cursor: pointer;
+}
+@media screen and (max-width: $mobile) {
+    .btn{
+        padding: 16px 21px!important;
+        font-size: 16px!important;
+        line-height: 18px!important;
+    }
+}
+.white-text{
+    color: white;
+}
+
+.right{
+    float: right;
+}
+
+.center{
+    margin: auto;
+}
+
+.icon-btn{
+    cursor: pointer;
+}

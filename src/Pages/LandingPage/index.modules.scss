@@ -1,0 +1,97 @@
+@import "assets/scss/variables";
+
+@media screen and (max-width: $tablet) {
+
+    //medium screen
+    .landing-container {
+        .root {
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding-top: 60px !important;
+
+            .title-content,
+            .description {
+                text-align: center !important;
+            }
+
+            img {
+                max-width: 100%;
+                width: 311px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: $mobile) {
+
+    //small screen
+    .landing_container {
+        .root {
+            padding-top: 94px !important;
+
+            .title-content {
+                font-size: 36px !important;
+                line-height: 36px !important;
+            }
+
+            .description {
+                font-size: 16px !important;
+                width: 321px !important;
+                line-height: 16px !important;
+            }
+
+            img {
+                max-width: 100%;
+                width: 165.63px;
+            }
+        }
+    }
+
+}
+
+.landing-container {
+    width: fit-content;
+    margin: auto;
+    min-width: 770px;
+    .root {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: fit-content;
+
+        .btn {
+            margin-top: 69px;
+        }
+
+        .title-content {
+            font-family: "Helvetica";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 64px;
+            color: $pc1;
+            text-align: right;
+
+            div:nth-child(2) {
+                background: $linear-gradient-bg1;
+                background-clip: text;
+                color: transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .description {
+            color: $ngtbc1;
+            font-family: "Helvetica";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: right;
+            margin-top: 16px;
+            width: 521px;
+        }
+    }
+}

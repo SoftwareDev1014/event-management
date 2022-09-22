@@ -1,0 +1,51 @@
+@import "assets/scss/variables";
+
+body,.App {
+  text-align: center;
+  background: #DDDDDD;
+}
+.App{
+  width: fit-content;
+  margin: auto;
+}
+.showDesktop{
+  display: none;
+}
+.showTablet{
+  display: none;
+}
+.showMobile{
+  display: none;
+}
+@media screen and (min-width: $tablet) {
+  //large screen
+  .App{
+    margin: auto;
+  }
+  .showDesktop{
+    display: block!important;
+  }
+}
+@media screen and (max-width: $tablet) {
+  //medium screen
+  .App{
+    max-width: $tablet;
+    margin: auto;
+  }
+  .showTablet{
+    display: block!important;
+  }
+}
+@media screen and (max-width: $mobile) {
+  //medium screen
+  .App{
+    width: 100%;
+  }
+  .showMobile{
+    display: block!important;
+  }
+  .showTablet{
+    display: none!important;
+  }
+}
+
